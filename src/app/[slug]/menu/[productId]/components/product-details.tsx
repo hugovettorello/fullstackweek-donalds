@@ -22,7 +22,7 @@ interface ProcutDetailsProps {
 
 const ProcutDetails = ({product}: ProcutDetailsProps) => {
 
-    const { toggleCart} = useContext(CartContext)
+    const { toggleCart, addProduct} = useContext(CartContext)
 
     const [quantity, setQuantity] = useState<number>(1)
 
@@ -42,6 +42,10 @@ const ProcutDetails = ({product}: ProcutDetailsProps) => {
     }
 
     const handleAddToCart = () => {
+        addProduct({
+            ...product,
+            quantity
+        })
         toggleCart()
     }
 
