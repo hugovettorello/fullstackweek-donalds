@@ -9,7 +9,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { formatCurrency } from "@/helpers/format-currency";
 
 import CartSheet from "../../components/cart-sheet";
-import { CartContext } from "../../context/card";
+import { CartContext } from "../../context/cart";
 
 interface ProcutDetailsProps {
     product: Prisma.ProductGetPayload<{include: {restaurant: {
