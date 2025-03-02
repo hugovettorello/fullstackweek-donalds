@@ -1,13 +1,12 @@
 import { useContext, useState } from "react";
 
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { formatCurrency } from "@/helpers/format-currency";
 
 import { CartContext } from "../context/cart";
 import CartProductItem from "./cart-product-item";
-import FinishOrderButton from "./finish-order-dialog";
-import { Button } from "@/components/ui/button";
 import FinishOrderDialog from "./finish-order-dialog";
 
 const CartSheet = ({}) => {
